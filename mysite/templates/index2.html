@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Text Analyzer</h1>
+    <form action="/analyze/" method="get">
+        <textarea name="text" id="text" placeholder="Enter your text here"></textarea><br>
+        <button type="submit">Analyze Text</button>
+        <br>
+        <input type="checkbox" id = "removepuc" name = "removepunc" value="on"> Remove Punctuations <br>
+        <input type="checkbox" id = "uppercase" name = "uppercase" value="on">UPPERCASE<br>
+        <input type="checkbox" id = "counter" name = "counter" value="on">count characters<br>
+
+    </form>
+</body>
+</html>
